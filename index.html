@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Experiments</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:linear-gradient(135deg,#141e30,#243b55);
+      min-height:100vh;
+      padding-bottom:50px;
+    }
+
+    /* HEADER */
+
+    .header{
+      text-align:center;
+      color:white;
+      padding:35px 20px;
+      background:rgba(0,0,0,0.2);
+      backdrop-filter:blur(5px);
+      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .header h1{
+      font-size:42px;
+      margin-bottom:10px;
+      letter-spacing:2px;
+    }
+
+    .header p{
+      font-size:18px;
+      opacity:0.9;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      width:90%;
+      margin:auto;
+      margin-top:40px;
+
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    /* CARD */
+
+    .card{
+      background:white;
+      border-radius:20px;
+      padding:25px;
+      position:relative;
+      overflow:hidden;
+      transition:0.4s;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.03);
+      box-shadow:0 15px 30px rgba(0,0,0,0.4);
+    }
+
+    .card::before{
+      content:'';
+      position:absolute;
+      width:120px;
+      height:120px;
+      background:linear-gradient(45deg,#00c6ff,#0072ff);
+      border-radius:50%;
+      top:-40px;
+      right:-40px;
+      opacity:0.2;
+    }
+
+    .card h2{
+      color:#243b55;
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#666;
+      margin-bottom:20px;
+      line-height:1.5;
+    }
+
+    /* BUTTON */
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:linear-gradient(45deg,#00c6ff,#0072ff);
+      color:white;
+      padding:12px 22px;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:linear-gradient(45deg,#ff512f,#dd2476);
+      transform:scale(1.05);
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      color:white;
+      margin-top:40px;
+      font-size:16px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div class="header">
+    <h1>Web Development Experiments</h1>
+    <p>Name: Your Name | Roll No: 1</p>
+  </div>
+
+  <!-- ASSIGNMENT CARDS -->
+
+  <div class="container">
+
+    <div class="card">
+      <h2>EXP1: Basics</h2>
+      <p>Introduction to HTML basic structure and tags.</p>
+      <a href="exp1.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP2: Static Webpage</h2>
+      <p>Create attractive static webpages using HTML & CSS.</p>
+      <a href="exp2.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP3: Text Formatting</h2>
+      <p>Learn formatting tags like bold, italic, underline etc.</p>
+      <a href="exp3.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP4: Lists</h2>
+      <p>Ordered lists, unordered lists and nested lists.</p>
+      <a href="exp4.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP5: Images</h2>
+      <p>Insert and style images in webpages.</p>
+      <a href="exp5.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP6: Iframe</h2>
+      <p>Embedding websites and videos using iframe tag.</p>
+      <a href="exp6.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP7: Links</h2>
+      <p>Create navigation links and hyperlinks.</p>
+      <a href="exp7.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP8: Tables</h2>
+      <p>Design tables using rows, columns and styling.</p>
+      <a href="exp8.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP9: Forms</h2>
+      <p>Create login and registration forms.</p>
+      <a href="exp9.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP10: Resume</h2>
+      <p>Build a personal resume webpage design.</p>
+      <a href="exp10.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP11: Library XML</h2>
+      <p>Display XML data with proper structure.</p>
+      <a href="exp11.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP12: Book XML</h2>
+      <p>XML with XSLT transformation examples.</p>
+      <a href="exp12.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>EXP13: Exam XML</h2>
+      <p>Create exam data transformation using XML.</p>
+      <a href="exp13.html" class="btn">Open</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Web Development Lab | Designed By You
+  </footer>
+
+</body>
+</html>
